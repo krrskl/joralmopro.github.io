@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JoralmoPro</title>
+  <link rel="stylesheet" href="./css/materialize.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <meta name="theme-color" content="#e74c3c">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+  <style>
+    .section1 img {
+      margin: auto;
+      border-radius: 50%;
+      height: 250px;
+      width: 250px;
+      box-shadow: -1px 1px 10px #fff;
+    }
+
+    .section1 {
+      position: relative;
+      min-height: 250px;
+      text-align: center;
+    }
+
+    * {
+      color: var(--text_white);
+    }
+
+    .card {
+      left: 50%;
+      transform: translate(-50%, 0);
+      height: 210px;
+      width: 210px;
+      border-radius: 50%;
+      text-align: center;
+      position: relative;
+      cursor: pointer;
+      box-shadow: -1px 1px 10px #fff;
+      background-color: var(--primary);
+      outline: none !important;
+      overflow: hidden;
+    }
+
+    .card .content,
+    .link_action {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .link_action {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
+      background: rgba(42, 53, 58, 0.92);
+      border-radius: 50%;
+      visibility: hidden;
+    }
+
+    .link_action a {
+      transition: all .2s ease;
+    }
+
+    .card:hover .link_action {
+      display: flex;
+      visibility: visible;
+    }
+
+    .card:hover .link_action a {
+      font-size: 5em;
+      transform: rotateZ(-30deg);
+    }
+
+    @media (max-width: 375px) {
+      .card {
+        height: 140px;
+        width: 140px;
+      }
+    }
+
+    @media only screen and (min-width: 425px) {
+      .card {
+        height: 190px;
+        width: 190px;
+      }
+    }
+
+    @media (min-width: 700px) {
+      .card {
+        height: 210px;
+        width: 210px;
+      }
+    }
+    
+    .social i {
+      font-size: x-large;
+    }
+
+    .social a {
+      margin-right: 6px;
+    }
+  </style>
+</head>
+
+<body>
+  <marquee behavior="alternate" style="text-transform: uppercase;">Bienvenido a mi portafolio</marquee>
+  <br>
+  <div class="container section1">
+    <img src="https://assets.gitlab-static.net/uploads/-/system/user/avatar/888779/avatar.png?width=90" alt="">
+
+    <h3>Hola, soy <strong>Jose Altamar</strong></h3>
+
+    <div class="social">
+      <a href="#">
+        <i class="fab fa-gitlab"></i>
+      </a>
+      <a href="#">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="#">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#">
+        <i class="fab fa-codepen"></i>
+      </a>
+      <a href="https://wa.me/573002892012?text=Hola%20:D">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+
+    <hr>
+    
+    <h5>Proyectos en los que he participado</h5>
+
+    <div class="row"></div>
+
+  </div>
+
+</body>
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script src="./js/materialize.js"></script>
+<script src="./js/main.js"></script>
+</html>
